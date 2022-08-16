@@ -95,10 +95,10 @@ endif
 
 " material theme variation
 " default | palenight | ocean | lighter | darker
-let g:material_theme_style = 'ocean'
+let g:material_theme_style = 'darker'
 
 set bg=dark
-colorscheme embark
+colorscheme material
 
 set encoding=utf-8
 
@@ -164,7 +164,7 @@ end
 
 nvim_lsp.tsserver.setup { }
 nvim_lsp.elixirls.setup{
-    cmd = { "~/.local/bin/elixir-ls/language_server.sh" },
+    cmd = { "/Users/jwstover/.local/bin/elixir-ls/rel/language_server.sh" },
     on_attach = on_attach
 }
 EOF
